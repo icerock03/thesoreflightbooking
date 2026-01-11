@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Store Flight | Vols & Visas</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #f5f7fa, #e4ebf5);
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #0b3c5d, #145f82);
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+    nav {
+      margin-top: 15px;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      color: #0b3c5d;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    p {
+      line-height: 1.6;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+    .card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-align: center;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    }
+    .card h3 {
+      margin-bottom: 10px;
+      color: #145f82;
+      font-size: 1.3rem;
+    }
+    .icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 45px;
+      height: 45px;
+      margin-right: 8px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #0b3c5d, #145f82);
+      color: #fff;
+      font-size: 22px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 25px;
+      background: linear-gradient(90deg, #0b3c5d, #145f82);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.2s;
+    }
+    .btn:hover {
+      background: linear-gradient(90deg, #145f82, #0b3c5d);
+      transform: scale(1.05);
+    }
+    #paiement ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+    #paiement li {
+      margin: 10px 0;
+    }
+    .contact {
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: auto;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+    footer {
+      background: #0b3c5d;
+      color: #fff;
+      text-align: center;
+      padding: 25px 10px;
+      margin-top: 40px;
+    }
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+    /* Bouton WhatsApp flottant */
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: #fff;
+      padding: 15px 18px;
+      border-radius: 50%;
+      font-size: 20px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+      text-decoration: none;
+      z-index: 1000;
+      transition: transform 0.3s;
+    }
+    .whatsapp:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>The Store Flight</h1>
+  <p>Vols moins chers • Hôtels • Visas • Voyages organisés</p>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#paiement">Paiement</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section style="text-align:center;">
+  <h2>Voyagez moins cher, simplement et en toute confiance</h2>
+  <p style="max-width:700px;margin:20px auto;">The Store Flight vous accompagne pour vos billets d’avion à prix réduits, réservations d’hôtels, démarches de visa Schengen, eVisa et voyages organisés. Un service rapide, humain et sécurisé.</p>
+  <a class="btn" href="https://wa.me/221762383780?text=Bonjour%20The%20Store%20Flight,%20je%20souhaite%20un%20devis" target="_blank">Contact WhatsApp</a>
+</section>
+
+<section id="services">
+  <h2>Nos services</h2>
+  <div class="services">
+    <div class="card">
+      <h3><span class="icon">✈️</span> Vols moins chers</h3>
+      <p>Recherche des meilleures offres de billets d’avion.</p>
+      <a class="btn" href="#contact">Demander un devis</a>
+    </div>
+    <div class="card">
+      <h3><span class="icon">🏨</span> Hôtels</h3>
+      <p>Hôtels économiques et confortables.</p>
+      <a class="btn" href="#contact">Réserver</a>
+    </div>
+    <div class="card">
+      <h3><span class="icon">🛂</span> Visa Schengen</h3>
+      <p>Prise de rendez-vous et assistance dossier.</p>
+      <a class="btn" href="#contact">Prendre RDV</a>
+    </div>
+    <div class="card">
+      <h3><span class="icon">🌍</span> eVisa</h3>
+      <p>Demande de visa électronique rapide.</p>
+      <a class="btn" href="#contact">Faire une demande</a>
+    </div>
+    <div class="card">
+      <h3><span class="icon">🧳</span> Voyages organisés</h3>
+      <p>Voyages touristiques et de groupe.</p>
+      <a class="btn" href="#contact">Voir les offres</a>
+    </div>
+  </div>
+</section>
+
+<section id="paiement">
+  <h2>Moyens de paiement</h2>
+  <p style="text-align:center;">Nous proposons des solutions simples et adaptées à tous :</p>
+  <ul>
+    <li>💳 PayPal (paiement sécurisé)</li>
+    <li>📱 Orange Money</li>
+    <li>💵 Paiement en espèces (Cash)</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Contact & réservation</h2>
+  <div class="contact">
+    <form>
+      <input type="text" placeholder="Votre nom" required />
+      <input type="email" placeholder="Votre email" required />
+      <input type="text" placeholder="Service demandé" />
+      <textarea placeholder="Votre message"></textarea>
+      <button class="btn" type="submit">Envoyer</button>
+    </form>
+    <p><strong>WhatsApp :</strong> +221 76 238 37 80</p>
+    <p><strong>Email :</strong> thestoresarlau@gmail.com</p>
+    <p><strong>Ville :</strong> Casablanca – Maroc</p>
+  </div>
+</section>
+
+<footer>
+  <p><strong>The Store Flight</strong> – Casablanca, Maroc</p>
+  <p>Email : thestoresarlau@gmail.com | WhatsApp : +221 76 238 37 80</p>
+  <p style="margin-top:10px;font-size:0.85rem;">Services de mise en relation. Les décisions de visa relèvent uniquement des ambassades. Les billets sont soumis aux conditions des compagnies aériennes.</p>
+  <p style="margin-top:10px;">© 2026 The Store Flight. Tous droits réservés.</p>
+</footer>
+<a class="whatsapp" href="https://wa.me/221762383780?text=Bonjour%20The%20Store%20Flight,%20je%20souhaite%20des%20informations" target="_blank">💬</a>
+
+</body>
+</html>
